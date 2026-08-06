@@ -133,8 +133,9 @@ with tab_map:
     m2.metric("Avg surge", f"{slot['surge'].mean():.2f}×")
     m3.metric("Completed rides (slot)", f"{slot['rides'].sum():.0f}")
     m4.metric("Hexes surging (>1.05×)", int((slot['surge'] > 1.05).sum()))
-    st.caption("Left-to-right rush hours and nightlife zones light up the imbalance "
-               "map; the optimizer concentrates surge exactly there.")
+    st.caption("At rush hour the busiest hexes show the biggest demand/supply gap; "
+               "switch 'Colour by' to Surge multiplier to see the optimizer put "
+               "surge exactly there.")
 
 
 # ---------------------------------------------------------------------------
