@@ -7,3 +7,5 @@ __pycache__/
 
 # application-specific (kept local, not published)
 SUBMISSION.md
+Dynamic_Pricing_Demo_Report.pdf
+build_report.py
